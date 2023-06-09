@@ -14,8 +14,42 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.skateboard video {
-  height: 50px;
-  width: 300px;
-  object-fit: fill;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .stack {
+    display: flex;
+    gap: 10px;
+    height: 50%;
+
+    &:first-of-type {
+      align-items: flex-end;
+    }
+  }
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video-container {
+  border-radius: 10px;
+  width: 230px;
+  height: 90%;
+
+  &.horizontal {
+    height: 100px;
+  }
 }
